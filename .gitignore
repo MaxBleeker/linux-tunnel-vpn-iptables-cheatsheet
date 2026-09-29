@@ -1,0 +1,8 @@
+router.pub
+peers/
+*.key
+*.psk
+*.conf
+*.rsc
+!scripts/
+!scripts/**

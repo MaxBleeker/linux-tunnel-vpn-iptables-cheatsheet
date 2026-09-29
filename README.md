@@ -11,4 +11,6 @@ Private command reference for class and lab work:
 
 **Start here:** [CHEATSHEET.md](./CHEATSHEET.md)
 
+**AP peer generator:** [scripts/wg-ap-peer.sh](./scripts/wg-ap-peer.sh) — generate WireGuard keys on the AP against an existing MikroTik WG interface. Endpoint is the router. The only value copied off the router is its public key.
+
 Repo is private so lab addressing and key-handling notes stay off the public internet. Do not commit private keys, `.ovpn` embeds, or live `iptables-save` dumps.
