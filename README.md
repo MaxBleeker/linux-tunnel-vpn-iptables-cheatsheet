@@ -1,9 +1,11 @@
 # linux-tunnel-vpn-iptables-cheatsheet
 Command cheatsheet for IPIP, SSH tunnels, OpenVPN, WireGuard, and iptables automation.
 
-## Bash ops reference
+## Start here
 
-- [bash-ops-reference.md](bash-ops-reference.md) is the small set of bash used to script downloads, iptables reloads, file drops, and an nginx reverse proxy without a giant case block.
-- [remote-exec.md](remote-exec.md) is the remote half: SSH wrappers, quoting, multiplexing, iptables over SSH with an undo timer, Docker, a systemd unit for a lab binary, and a Tiny SHell client wrapper that uses the same shape.
+[bash-ssh-basics.md](bash-ssh-basics.md) is the method: do it by hand, paste the lines into a file, send the file over SSH. nginx snippet and iptables add-if-missing are the worked examples.
 
-Each section is a copy-paste pattern plus a line-by-line note. Secrets stay in the environment. `conf/*.env` is gitignored.
+## Longer notes
+
+- [bash-ops-reference.md](bash-ops-reference.md) — functions, manifests, templates.
+- [remote-exec.md](remote-exec.md) — SSH wrappers, Docker, undo timer, tsh.
